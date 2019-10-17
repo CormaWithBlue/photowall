@@ -1,9 +1,7 @@
 <template>
   <div class="login">
+    <div class="login_title"></div>
     <div class="login_user">
-      <br />
-      <br />
-      <a>登录：</a>
       <br />
       <br />
       <a>用户名：</a>
@@ -15,9 +13,6 @@
       <a>图形验证码：</a>
     </div>
     <div class="login_input">
-      <br />
-      <br />
-      <a></a>
       <br />
       <br />
       <a>
@@ -56,15 +51,21 @@ export default {
   width: 100%;
   height: 610px;
 }
+.login_title {
+  width: 100px;
+  height: 100px;
+}
 .login_user {
   text-align: right;
-  width: 50%;
+  width: 48%;
   float: left;
+  margin-top: 50px;
 }
 .login_input {
   text-align: left;
   position: relative;
   float: left;
   width: 40%;
+  margin-top: 50px;
 }
 </style>

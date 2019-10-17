@@ -9,8 +9,17 @@ module.exports = {
 
     // Paths
     assetsSubDirectory: 'static',
-    assetsPublicPath: './',
-    proxyTable: {},
+    assetsPublicPath: '/',
+    proxyTable: {
+      'apis': {
+        target: "http://192.168.31.182", //接口域名
+        //"http: //192.168.31.182:8899/GetFileList"
+        changeOrigin: true, //是否跨域
+        pathRewrite: {
+          '^/apis': '' //需要rewrite重写的
+        }
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
