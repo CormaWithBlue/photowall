@@ -7,6 +7,7 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import axios from 'axios'
 
+
 Vue.prototype.$Element = {
   size: 'small',
   zIndex: 3000
@@ -18,7 +19,8 @@ Vue.prototype.$axios = axios;
 axios.defaults.baseURL = '/apis'
 
 Vue.config.productionTip = false;
-Vue.use(ElementUI)
+Vue.use(ElementUI);
+
 
 
 /* eslint-disable no-new */
