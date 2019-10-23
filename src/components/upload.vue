@@ -33,7 +33,8 @@ export default {
       let self = this;
       this.$axios
         .request({
-          url: self.urlXb + self.pathXb, //通知网卡去链接进行请求
+          // url/method/params 等是request的参数的属性
+          url: self.urlXb + self.pathXb,
           method: "get",
           params: {
             // 请求的参数
@@ -116,7 +117,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .upload {
-  background-image: url("../assets/background_pubilc.jpg");
+  background-image: url("../../static/background_pubilc.jpg");
   /* background-size: 100% 100%; */
   /* width: 100%; */
   background-size: 100% auto;
